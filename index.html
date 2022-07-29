@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <button id="new" type="button" onclick="newGame()">NEW</button>
+            <div id="cover">
+                <p id="quote"></p>
+                <button id="ngame" type="button" onclick="newGame()">NEW GAME</button>
+            </div>
+            <div id="lives">
+                <p>Your Lives</p>
+                <h2>10</h2>
+            </div>
+            <h1 style=" font-weight: lighter; font-size: 55px; font-family: 'Grenze Gotisch', cursive;">Hangman Game</h1>
+            <h2 style="text-align: center; margin-top: 40px; font-weight: lighter; font-size: 40px; font-family: 'Luckiest Guy', cursive;">Guess the country name</h2>
+            <p style="text-align: center; margin-top: 28px; font-size: 22px; color: #fff;" id="que"></p>
+            <table id="space-box"></table>
+            <table id="letters">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>N</td>
+                    <td>O</td>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>U</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>X</td>
+                    <td>Y</td>
+                    <td>Z</td>
+                </tr>
+            </table>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
